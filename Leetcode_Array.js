@@ -6,6 +6,18 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].*/
 const Log = (data) => console.log(data);
 
+/* Two sum : Approch 0 - by brute force */
+var twoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+};
+/* Two sum : Approch 0 : Ends */
+
 /* Two sum : Approch 1 - by brute force */
 var twoSum = function (nums, target) {
   let ans = [];
